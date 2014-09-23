@@ -1,8 +1,8 @@
 -- VERSION_4
 -- START DISKCACHE
 /Users/plutarco/Workspace/Intro_RNA/.metadata/.plugins/org.eclipse.core.resources/.projects/LE-01/com.python.pydev.analysis/v2_indexcache
-Q1|1411328586000|/Users/plutarco/Workspace/Intro_RNA/LE-01/Q1.py
-Q2|1411351223000|/Users/plutarco/Workspace/Intro_RNA/LE-01/Q2.py
+Q1|1411419309000|/Users/plutarco/Workspace/Intro_RNA/LE-01/Q1.py
+Q2|1411436387000|/Users/plutarco/Workspace/Intro_RNA/LE-01/Q2.py
 -- END DISKCACHE
 -- START DICTIONARY
 2
@@ -10,8 +10,9 @@ Q2|1411351223000|/Users/plutarco/Workspace/Intro_RNA/LE-01/Q2.py
 2=Q2
 -- END DICTIONARY
 -- START TREE 1
-11
+14
 arr|2|array_entrada!11@array_entrada!19@
+bet|0|
 com|2|combinador_linear!19@combinador_linear!11@
 dad|2|dados_entrada!11@dados_entrada!19@
 fun|5|func_tang_hiperb!10@func_degree!18@func_degree!10@func_tang_hiperb!18@func_logis!18@
@@ -21,6 +22,8 @@ pes|2|pesos!19@pesos!11@
 sin|2|sinais_entrada!11@sinais_entrada!19@
 tet|2|teta!11@teta!19@
 u|2|u!11@u!19@
+x1|1|x1!19@
+x2|1|x2!19@
 y|2|y!19@y!11@
 -- END TREE
 -- START TREE 2

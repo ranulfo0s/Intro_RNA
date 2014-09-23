@@ -3,23 +3,20 @@ Created on Sep 21, 2014
 
 @author: plutarco
 '''
-'''
-Created on Sep 21, 2014
 
-@author: plutarco
-'''
 import numpy as np
 from StringIO import StringIO
 import matplotlib.pyplot as plt
+
 #Manipulacao dos dados de entrada do arquivo txt
 dados_entrada = ""
-with open("EntradasC.txt") as file:
+with open("EntradasG.txt") as file:
     for line in file:
         # The rstrip method gets rid of the "\n" at the end of each line
         dados_entrada += line
 array_entrada = dados_entrada.rstrip().split("#")
 sinais_entrada = np.genfromtxt(StringIO(array_entrada[0]), delimiter=",")
-print(sinais_entrada)
+
 #n representa quantidade de conjunto de sinais de entrada recebidos
 n = np.genfromtxt(StringIO(array_entrada[1]), delimiter=",")
 pesos = np.genfromtxt(StringIO(array_entrada[2]), delimiter=",")
@@ -66,19 +63,22 @@ if(g == 2):
     for x in range(n):
         y.append(func_logis(u[x], beta))
 
-print(len(sinais_entrada))
-print(len(y))
+
 print(y)
 
-plt.plot(sinais_entrada, y, "-b")
+x1 = list(zip(*sinais_entrada)[0])
+x2 = list(zip(*sinais_entrada)[1])  
+
+plt.plot(x1, y, "-b")
+plt.plot(x2, y, "-r")
 plt.xlabel('Sinais de Entrada') 
 plt.ylabel('Funcao de Ativacao: g(u)',rotation='vertical')
-plt.title("Questao 2 - C")
+plt.title("Questao 2 - G")
 plt.xlim(0)
 plt.ylim(0)
 
 plt.grid(True)
-plt.savefig('questaoC.png') 
+plt.savefig('questaoG.png') 
 plt.show()
     
 
